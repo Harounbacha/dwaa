@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الاستشارات الطبية عن بعد - دواء</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="main-header">
+            <nav class="nav-menu">
+                <div class="logo">
+                    <img src="assets/logo.svg" alt="شعار دواء">
+                    <h1>dwaa</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+                    <li><a href="services.html" class="nav-link">خدماتنا</a></li>
+                    <li><a href="#" class="nav-link">الأطباء</a></li>
+                    <li><a href="about.html" class="nav-link">من نحن</a></li>
+                    <li><a href="#" class="nav-link">اتصل بنا</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-login">دخول</a>
+                    <a href="register.html" class="btn btn-register">تسجيل</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <section class="consultation-section">
+                <div class="container">
+                    <h2 class="section-title">استشارة طبية عن بعد</h2>
+                    <div class="consultation-form-container">
+                        <form id="consultationForm" class="consultation-form">
+                            <div class="form-group">
+                                <label for="speciality">التخصص الطبي</label>
+                                <select id="speciality" name="speciality" class="form-control" required>
+                                    <option value="">اختر التخصص</option>
+                                    <option value="general">طب عام</option>
+                                    <option value="cardiology">أمراض القلب</option>
+                                    <option value="dentistry">طب الأسنان</option>
+                                    <option value="pediatrics">طب الأطفال</option>
+                                    <option value="orthopedics">العظام</option>
+                                    <option value="dermatology">الجلدية</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="doctor">اختر الطبيب</label>
+                                <select id="doctor" name="doctor" class="form-control" required>
+                                    <option value="">اختر الطبيب</option>
+                                    <option value=""> د: باشا امينة </option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="consultationType">نوع الاستشارة</label>
+                                <select id="consultationType" name="consultationType" class="form-control" required>
+                                    <option value="">اختر نوع الاستشارة</option>
+                                    <option value="video">مكالمة فيديو</option>
+                                    <option value="voice">مكالمة صوتية</option>
+                                    <option value="chat">محادثة نصية</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="symptoms">الأعراض والشكوى</label>
+                                <textarea id="symptoms" name="symptoms" class="form-control" rows="4" placeholder="اشرح حالتك الصحية بالتفصيل" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="files">إرفاق ملفات طبية (اختياري)</label>
+                                <input type="file" id="files" name="files" class="form-control" multiple>
+                                <small class="form-text">يمكنك إرفاق صور الأشعة، التحاليل، أو أي مستندات طبية أخرى</small>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">طلب استشارة</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <div class="footer-section contact-section">
+                        <h3>تواصل معنا</h3>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>656536613 +213</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>harounbacha2005@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>باتنة الجزائر</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/consultation.js"></script>
+</body>
+</html>

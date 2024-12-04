@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب جديد - دواء</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="main-header">
+            <nav class="nav-menu container">
+                <div class="nav-brand">
+                    <a href="index.html">
+                        <img src="images/logo-white.svg" alt="دواء" class="nav-logo">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+                    <li><a href="services.html" class="nav-link">خدماتنا</a></li>
+                    <li><a href="#" class="nav-link">الأطباء</a></li>
+                    <li><a href="about.html" class="nav-link">من نحن</a></li>
+                    <li><a href="#" class="nav-link">اتصل بنا</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-login">تسجيل الدخول</a>
+                    <a href="register.html" class="btn btn-register active">إنشاء حساب</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <section class="register-section">
+                <div class="container">
+                    <div class="auth-form-container">
+                        <h1 class="form-title">إنشاء حساب جديد</h1>
+                        <form id="registerForm" class="auth-form">
+                            <div class="form-group">
+                                <label for="fullName">الاسم الكامل</label>
+                                <input type="text" id="fullName" name="fullName" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">البريد الإلكتروني</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">رقم الهاتف</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="password">كلمة المرور</label>
+                                <div class="password-input">
+                                    <input type="password" id="password" name="password" required>
+                                    <button type="button" class="toggle-password">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="confirmPassword">تأكيد كلمة المرور</label>
+                                <div class="password-input">
+                                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                                    <button type="button" class="toggle-password">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" id="terms" name="terms" required>
+                                    <span class="checkmark"></span>
+                                    أوافق على <a href="#">الشروط والأحكام</a>
+                                </label>
+                            </div>
+
+                            <div id="errorMessage" class="error-message"></div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block">إنشاء حساب جديد</button>
+                        </form>
+                        
+                        <div class="auth-links">
+                            <p>لديك حساب بالفعل؟ <a href="login.html">تسجيل الدخول</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <div class="footer-section contact-section">
+                        <h3>تواصل معنا</h3>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>656536613 +213</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>harounbacha2005@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>باتنة، الجزائر</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-section quick-links">
+                        <h3>روابط سريعة</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html"><i class="fas fa-chevron-left"></i>الرئيسية</a></li>
+                            <li><a href="services.html"><i class="fas fa-chevron-left"></i>خدماتنا</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-left"></i>الأطباء</a></li>
+                            <li><a href="about.html"><i class="fas fa-chevron-left"></i>من نحن</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-left"></i>اتصل بنا</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section newsletter">
+                        <h3>النشرة البريدية</h3>
+                        <p>اشترك في نشرتنا البريدية للحصول على آخر الأخبار والعروض</p>
+                        <form class="newsletter-form" id="newsletter-form">
+                            <div class="form-group">
+                                <input type="email" placeholder="البريد الإلكتروني" required>
+                                <button type="submit" class="btn-subscribe">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="copyright">
+                    <p>&copy; 2024 دواء - جميع الحقوق محفوظة</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="module">
+        import { userService } from './js/api.js';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const registerForm = document.getElementById('registerForm');
+            const errorMessage = document.getElementById('errorMessage');
+
+            // التحقق من تطابق كلمات المرور
+            const validatePasswords = () => {
+                const password = document.getElementById('password').value;
+                const confirmPassword = document.getElementById('confirmPassword').value;
+                return password === confirmPassword;
+            };
+
+            // التحقق من صحة البريد الإلكتروني
+            const validateEmail = (email) => {
+                const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return re.test(email);
+            };
+
+            // التحقق من صحة رقم الهاتف
+            const validatePhone = (phone) => {
+                const re = /^[0-9]{10}$/;
+                return re.test(phone);
+            };
+
+            registerForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                errorMessage.textContent = '';
+
+                const fullName = document.getElementById('fullName').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+                const password = document.getElementById('password').value;
+                const terms = document.getElementById('terms').checked;
+
+                // التحقق من الحقول
+                if (!validateEmail(email)) {
+                    errorMessage.textContent = 'البريد الإلكتروني غير صحيح';
+                    return;
+                }
+
+                if (!validatePhone(phone)) {
+                    errorMessage.textContent = 'رقم الهاتف غير صحيح';
+                    return;
+                }
+
+                if (!validatePasswords()) {
+                    errorMessage.textContent = 'كلمات المرور غير متطابقة';
+                    return;
+                }
+
+                if (!terms) {
+                    errorMessage.textContent = 'يجب الموافقة على الشروط والأحكام';
+                    return;
+                }
+
+                try {
+                    const userData = {
+                        fullName,
+                        email,
+                        phone,
+                        password
+                    };
+
+                    const response = await userService.register(userData);
+                    
+                    if (response.success) {
+                        // تخزين بيانات المستخدم
+                        localStorage.setItem('user', JSON.stringify(response.user));
+                        localStorage.setItem('token', response.token);
+                        
+                        // إعادة التوجيه إلى الصفحة الرئيسية
+                        window.location.href = 'index.html';
+                    } else {
+                        errorMessage.textContent = response.message || 'حدث خطأ أثناء إنشاء الحساب';
+                    }
+                } catch (error) {
+                    errorMessage.textContent = 'حدث خطأ في الاتصال بالخادم';
+                    console.error('Registration error:', error);
+                }
+            });
+
+            // إظهار/إخفاء كلمة المرور
+            const togglePasswordButtons = document.querySelectorAll('.toggle-password');
+            togglePasswordButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const input = this.previousElementSibling;
+                    const type = input.getAttribute('type') === 'password' ? 'text' : 'password';
+                    input.setAttribute('type', type);
+                    
+                    const icon = this.querySelector('i');
+                    icon.classList.toggle('fa-eye');
+                    icon.classList.toggle('fa-eye-slash');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
