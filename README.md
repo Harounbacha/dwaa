@@ -28,7 +28,7 @@ Dwaa Healthcare App is a comprehensive web application designed to provide users
 ## Setup and Deployment
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/dwaa-healthcare-app.git
+   git clone https://github.com/haroun bacha/dwaa-healthcare-app.git
    ```
 2. Navigate to the project directory:
    ```bash
@@ -43,7 +43,7 @@ Dwaa Healthcare App is a comprehensive web application designed to provide users
 Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
 
 ## License
-for bacha haroun errachid .
+for Bacha Haroun Errachid .
 
 ## Contact
 For any inquiries, please contact [harounbacha2005@gmail.com].
